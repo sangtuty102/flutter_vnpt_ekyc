@@ -1,0 +1,534 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+
+    <!--Blended Layout for Portrait-->
+    <LinearLayout
+        android:id="@+id/blendedLayoutForPortrait"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:visibility="visible"
+        android:weightSum="1">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".13"
+            android:background="@color/md_blue">
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight=".52"
+            android:background="@color/transparent"
+            android:gravity="center">
+
+            <com.vnptit.idg.sdk.view.CircleFocusView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:gravity="center" />
+
+            <com.dinuscxj.progressbar.CircleProgressBar
+                android:id="@+id/mLineProgressBar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="2dp"
+                app:drawBackgroundOutsideProgress="true"
+                app:line_count="180"
+                app:line_width="15dp"
+                app:progress_background_color="@color/md_grey_500"
+                app:progress_end_color="#76E89E"
+                app:progress_shader="sweep"
+                app:progress_start_color="#76E89E"
+                app:progress_start_degree="-30"
+                app:progress_stroke_cap="square"
+                app:progress_stroke_width="2dp"
+                app:style="line" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/_18sdp"
+                android:src="@drawable/ic_circle_scan_face"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_centerInParent="true"
+                android:paddingTop="@dimen/_20sdp"
+                android:gravity="center"
+                android:paddingBottom="@dimen/_20sdp">
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/imgFaceLeft"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="match_parent"
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="true"
+                    app:lottie_rawRes="@raw/ekyc_scan_left"
+                    android:visibility="invisible"
+                    />
+                <ImageView
+                    android:id="@+id/imgFaceStraight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_giua"
+                    android:visibility="gone"/>
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/imgFaceRight"
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="match_parent"
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="true"
+                    app:lottie_rawRes="@raw/ekyc_scan_right"
+                    android:visibility="visible"
+                    android:layout_toRightOf="@+id/imgFaceLeft"
+                    android:layout_toEndOf="@+id/imgFaceLeft" />
+
+
+                <ImageView
+                    android:id="@+id/imgFace"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+        <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:layout_weight=".5"-->
+        <!--android:background="@android:color/transparent"-->
+        <!--android:gravity="center">-->
+        <!--<View-->
+        <!--android:layout_width="350dp"-->
+        <!--android:layout_height="350dp"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:layout_centerInParent="true"-->
+        <!--android:background="@drawable/rounded_white_circle" />-->
+
+        <!--</RelativeLayout>-->
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".35"
+            android:background="@color/md_blue" />
+    </LinearLayout>
+
+    <!--Guide Layout-->
+    <LinearLayout
+        android:id="@+id/guideLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible"
+        android:weightSum="1">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".13">
+
+            <ImageView
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/ic_bg_portrait_top"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/tvGuideTop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginStart="@dimen/_12sdp"
+                android:layout_marginLeft="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:gravity="center"
+                android:maxLines="2"
+                android:text=""
+                android:textColor="@color/md_grey_50"
+                android:textSize="16sp"
+                android:textStyle="normal" />
+
+            <Button
+                android:id="@+id/btnForceExit"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_12sdp"
+                android:layout_marginRight="@dimen/_12sdp"
+                android:background="@mipmap/ic_back"
+                android:gravity="center"
+                android:textColor="@color/md_white" />
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/animationSupportFace"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_below="@+id/btnForceExit"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="@dimen/_5sdp"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true" />
+            <!--            <ImageView-->
+            <!--                android:id="@+id/imgSupportRotate"-->
+            <!--                android:layout_centerInParent="true"-->
+            <!--                android:layout_marginTop="@dimen/_5sdp"-->
+            <!--                android:layout_below="@+id/btnForceExit"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:background="@drawable/ic_emo_right"-->
+            <!--                android:visibility="gone" />-->
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".52"
+            android:gravity="center"
+            android:weightSum="1">
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rlBottomBackground"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".35"
+            android:background="@drawable/ic_bg_portrait_bottom">
+
+            <LinearLayout
+                android:id="@+id/viewGuideBottom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tvGuideBottom"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="center"
+                        android:maxLines="4"
+                        android:textColor="@color/textGuideColor"
+                        android:textSize="14sp" />
+
+                    <ImageButton
+                        android:id="@+id/btnSwitchCamera"
+                        android:layout_width="30dp"
+                        android:layout_height="24dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center|bottom"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/ic_camera"
+                        android:contentDescription="@string/ekyc_portrait"
+                        android:onClick="onClick"
+                        android:scaleType="fitCenter"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <!--image show dot image-->
+                <ImageView
+                    android:id="@+id/imgSupportDot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/ic_dot_right"
+                    android:visibility="gone" />
+
+
+            </LinearLayout>
+
+
+            <ImageView
+                android:id="@+id/imgFaceSupport"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_70sdp"
+                android:adjustViewBounds="true"
+                android:layout_centerInParent="true"
+                android:src="@drawable/img_face_support_right_v2"
+                />
+            <TextView
+                android:id="@+id/tvShowDialogSupport"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imgFaceSupport"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:maxLines="2"
+                android:text="@string/ekyc_support"
+                android:textAllCaps="false"
+                android:textColor="@color/color_bg_green_btn"
+                android:textSize="@dimen/_13sdp"
+                android:textStyle="normal"
+                android:visibility="visible"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvShowDialogSupport"
+                android:layout_alignParentBottom="true"
+                android:gravity="center_horizontal"
+                android:paddingTop="10dp">
+
+                <ImageButton
+                    android:id="@+id/btnCapture"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center|bottom"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="30dp"
+                    android:background="@mipmap/group_capture__3x"
+                    android:contentDescription="@string/ekyc_photo"
+                    android:onClick="onClick"
+                    android:scaleType="fitCenter"
+                    android:visibility="gone" />
+
+
+                <LinearLayout
+                    android:id="@+id/llTradeMark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="15dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@drawable/ic_vnpt"
+                    android:orientation="horizontal"
+                    android:visibility="visible" />
+                <!--<TextView-->
+                <!--android:id="@+id/tvPowerBy"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@+id/btnCapture"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:text="Powered by VNPT IT"-->
+                <!--android:layout_marginTop="2dp"-->
+                <!--android:textColor="@color/md_grey_50"-->
+                <!--android:textSize="12sp" />-->
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/btnList"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="10dp"
+                android:baselineAligned="false"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <!--<View-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_weight="1" />-->
+
+
+                <!--<View-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_weight="1" />-->
+
+
+                <!--<View-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_weight="1" />-->
+
+            </LinearLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <!--view Camera result-->
+    <RelativeLayout
+        android:id="@+id/viewCameraResult"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/md_blue"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/ic_bg_portrait_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:id="@+id/btnRepeat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textRepeat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/_4sdp"
+                android:text="@string/ekyc_repeat"
+                android:textAllCaps="false"
+                android:textColor="@color/color_bg_green_btn"
+                android:textSize="@dimen/_13sdp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_20sdp">
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/animationScanPortrait"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:adjustViewBounds="true"
+                    app:lottie_speed="1.5"
+                    android:layout_margin="@dimen/_8sdp"
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="false"
+                    app:lottie_rawRes="@raw/ekyc_success_portrait" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="@dimen/_18sdp"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/ic_circle_portrait_inner" />
+
+                <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/imgCapturedCircle"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_255sdp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="@dimen/_30sdp"
+                    android:src="@color/md_deep_purple_a100"
+                    android:visibility="visible"
+                    app:civ_border_color="#FFFFFF"
+                    app:civ_border_width="2dp" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:gravity="center"
+                android:textColor="@color/md_white"
+                android:textSize="14sp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btnNext"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginBottom="@dimen/_30sdp"
+            android:background="@drawable/rounded_background_green_btn"
+            android:gravity="center"
+            android:onClick="onClick"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:gravity="center"
+                android:text="@string/ekyc_next"
+                android:textAllCaps="true"
+                android:textColor="@color/md_btn_next"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imgBottomBackground"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_bg_portrait_bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:id="@+id/llTradeMarkStop"
+            android:layout_width="wrap_content"
+            android:layout_height="15dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/ic_vnpt"
+            android:orientation="horizontal"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+</FrameLayout>

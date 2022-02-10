@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="add_face_reception_fail">FAILURE</string>
+    <string name="add_face_reception_success">SUCCESS</string>
+    <string name="back_pressed_guide_msg">Bạn có muốn thoát khi chưa thực hiện xong quá trình?</string>
+    <string name="back_pressed_guide_no">Không</string>
+    <string name="back_pressed_guide_yes">Có</string>
+    <string name="blur_face">Mờ mặt</string>
+    <string name="camera_error">Điện thoại này không hỗ trợ Camera2 API.</string>
+    <string name="cancel_again_add_face">Hủy bỏ</string>
+    <string name="cannot_capture_image">Vui lòng chụp lại!</string>
+    <string name="cannot_compare_photos">Không thể so sánh được chân dung và ảnh trên giấy tờ!</string>
+    <string name="cannot_connect_server">Không kết nối được tới server</string>
+    <string name="cannot_extract_result">Không thể trích xuất được kết quả!</string>
+    <string name="compare_fail_mark">Khuôn mặt không hợp lệ</string>
+    <string name="confirm_personal_info">Xác minh thông tin</string>
+    <string name="description_capturing_driver">"         <![CDATA[<font color=#ffffff>%s</font> <br /> Bằng lái xe ]]>     "</string>
+    <string name="description_capturing_id_card">
+        <![CDATA[<font color=#ffffff>%s</font> <br /> Chứng minh thư / Thẻ căn cước ]]>
+    </string>
+    <string name="description_capturing_military_card">
+        <![CDATA[<font color=#ffffff>%s</font> <br /> Chứng minh thư quân đội ]]>
+    </string>
+    <string name="description_capturing_passport">
+        <![CDATA[Trang hộ chiếu có ảnh chân dung bạn]]>
+    </string>
+    <string name="document_illegal">Giấy tờ không hợp lệ</string>
+    <string name="document_photo">Giấy tờ photo</string>
+    <string name="ekyc_add_face_fail">Thất bại</string>
+    <string name="ekyc_add_face_success">Thành công</string>
+    <string name="ekyc_back">TRỞ VỀ</string>
+    <string name="ekyc_birth_day">Ngày sinh:</string>
+    <string name="ekyc_birth_place">Nơi sinh:</string>
+    <string name="ekyc_check_live">Xác thực:</string>
+    <string name="ekyc_close_images_review">ĐÓNG CỬA SỔ XEM ẢNH</string>
+    <string name="ekyc_compare_result">Kết quả so sánh:</string>
+    <string name="ekyc_complete">Hoàn thành</string>
+    <string name="ekyc_docs">Giấy tờ:</string>
+    <string name="ekyc_english">English</string>
+    <string name="ekyc_exit">THOÁT</string>
+    <string name="ekyc_front">Mặt trước</string>
+    <string name="ekyc_gender">Giới tính:</string>
+    <string name="ekyc_id">Số CMND:</string>
+    <string name="ekyc_ignore">Bỏ qua</string>
+    <string name="ekyc_issue_date">Ngày cấp:</string>
+    <string name="ekyc_issue_place">Nơi cấp:</string>
+    <string name="ekyc_language">Chọn ngôn ngữ</string>
+    <string name="ekyc_name">Họ và tên:</string>
+    <string name="ekyc_next">Tiếp theo</string>
+    <string name="ekyc_photo">Chụp ảnh</string>
+    <string name="ekyc_portrait">CHÂN DUNG</string>
+    <string name="ekyc_portrait_2">So sánh:</string>
+    <string name="ekyc_rank">Hạng:</string>
+    <string name="ekyc_rear">Mặt sau</string>
+    <string name="ekyc_recent_location">Nơi ĐKHK thường trú:</string>
+    <string name="ekyc_recent_place">Nơi cư trú:</string>
+    <string name="ekyc_repeat"><![CDATA[<u>Chụp lại</u>]]></string>
+    <string name="ekyc_rs_no">Không</string>
+    <string name="ekyc_rs_yes">Có</string>
+    <string name="ekyc_save">Lưu</string>
+    <string name="ekyc_show_images">XEM LẠI</string>
+    <string name="ekyc_show_info">KẾT QUẢ</string>
+    <string name="ekyc_start_over">THỬ LẠI</string>
+    <string name="ekyc_support"><![CDATA[<u>Hướng dẫn</u>]]></string>
+    <string name="ekyc_title_info">Thông tin cá nhân</string>
+    <string name="ekyc_title_validation">Validation</string>
+    <string name="ekyc_version_sdk">Version SDK: %s</string>
+    <string name="ekyc_version_server">Version Server: %s</string>
+    <string name="ekyc_vietnamese">Việt Nam</string>
+    <string name="error">Lỗi:</string>
+    <string name="error_login">Lỗi kết nối thông tin, Kiểm tra lại kết nối Internet!</string>
+    <string name="error_ocr_alert">Không trích xuất được thông tin. Vui lòng thử lại!</string>
+    <string name="error_register">Lỗi khởi tạo thông tin, Kiểm tra lại kết nối Internet!</string>
+    <string name="fail_ocr_verify">fail_ocr_verify</string>
+    <string name="front_guide_button">Đã lật mặt trước</string>
+    <string name="front_guide_message">Vui lòng lật mặt trước của giấy tờ, đưa điện thoại để mặt trước nằm khít trong khung hình chụp</string>
+    <string name="front_guide_title">Chụp giấy tờ mặt trước</string>
+    <string name="guide_for_capturing_id_card">
+        <![CDATA[Xin vui lòng <br /> Đặt giấy tờ nằm vừa khung hình chữ nhật, <br /> chụp đủ ánh sáng và rõ nét]]>
+    </string>
+    <string name="guide_for_capturing_passport">
+        <![CDATA[Xin vui lòng <br /> Chụp trang thông tin hộ chiếu có ảnh <br /> chân dung bạn]]>
+    </string>
+    <string name="guide_for_capturing_portrain">
+        <![CDATA[Xin vui lòng <br /> %s]]>
+    </string>
+    <string name="huong_dan_xac_thuc_khuon_mat">huong_dan_xac_thuc_khuon_mat</string>
+    <string name="id_driver">Số ID:</string>
+    <string name="id_edit">Số ID sửa xóa!</string>
+    <string name="id_not_match_dob">Không khớp với năm sinh!</string>
+    <string name="id_not_match_gender">Không khớp với giới tính!</string>
+    <string name="id_not_match_post_code">Không khớp với mã tỉnh thành!</string>
+    <string name="id_not_valid">Số ID không hợp lệ!</string>
+    <string name="invalid_dob">Ngày sinh không hợp lệ!</string>
+    <string name="liveness_fail_mark">Mặt bị che</string>
+    <string name="message_add_face_fail">Quá trình xác minh khuôn mặt thất bại! Bạn có muốn thử lại không?</string>
+    <string name="not_pass_liveness">Not Pass</string>
+    <string name="notice_camera_broken">Thiết bị không hỗ trợ camera hoặc camera bị hỏng!</string>
+    <string name="nut_chup_lai_khuon_mat">nut_chup_lai_khuon_mat</string>
+    <string name="nut_chup_lai_mat_sau">nut_chup_lai_mat_sau</string>
+    <string name="nut_chup_lai_mat_truoc">nut_chup_lai_mat_truoc</string>
+    <string name="nut_chup_mat_sau">nut_chup_mat_sau</string>
+    <string name="nut_chup_mat_truoc">nut_chup_mat_truoc</string>
+    <string name="nut_close_ket_qua">nut_close_ket_qua</string>
+    <string name="nut_doi_camera">nut_doi_camera</string>
+    <string name="nut_hoan_thanh_khuon_mat">nut_hoan_thanh_khuon_mat</string>
+    <string name="nut_tiep_theo_mat_sau">nut_tiep_theo_mat_sau</string>
+    <string name="nut_tiep_theo_mat_truoc">nut_tiep_theo_mat_truoc</string>
+    <string name="other_errors">Không hợp lệ</string>
+    <string name="other_errors_compare">Lỗi so sánh khuôn mặt</string>
+    <string name="overlay_image">Dán đè ảnh:</string>
+    <string name="portrait_description">
+        <![CDATA[Ảnh <br /> Chân dung chủ giấy tờ]]>
+    </string>
+    <string name="portrait_guide_bottom">Giữ thẳng mặt trong vòng %s giây</string>
+    <string name="portrait_guide_bottom_manual">
+        <![CDATA[Xin vui lòng <br /> Để khuôn mặt vừa khung hình, chụp <br /> đủ ánh sáng và rõ nét]]>
+    </string>
+    <string name="portrait_guide_bottom_wait">Vui lòng đợi ảnh được chụp...</string>
+    <string name="portrait_guide_button">Sẵn sàng</string>
+    <string name="portrait_guide_message">Vui lòng đưa điện thoại lên trước mặt, giữ thẳng mặt và để khuôn mặt nằm trọn vẹn trong khung hình chụp</string>
+    <string name="portrait_guide_title">Chụp ảnh chân dung</string>
+    <string name="rear_guide_button">Đã lật mặt sau</string>
+    <string name="rear_guide_message">Vui lòng lật mặt sau của giấy tờ lên trước, đưa điện thoại để mặt sau nằm khít trong khung hình chụp</string>
+    <string name="rear_guide_title">Chụp giấy tờ mặt sau</string>
+    <string name="register_identity">Đăng ký thông tin</string>
+    <string name="request_camera_permission">Ứng dụng này cần cấp quyền truy cập Camera</string>
+    <string name="request_permission">Ứng dụng này cần cấp quyền truy cập Camera và bộ nhớ</string>
+    <string name="request_permission_denied">Ứng dụng này cần cấp quyền truy cập Camera và bộ nhớ. Vui lòng vào phần cài đặt để thiết lập quyền</string>
+    <string name="request_storage_permission">Ứng dụng này cần cấp quyền truy cập bộ nhớ</string>
+    <string name="result_image">Ảnh chụp</string>
+    <string name="result_info">Thông tin cá nhân</string>
+    <string name="rs_card_fake">Không chụp trực tiếp</string>
+    <string name="rs_card_real">Chụp trực tiếp</string>
+    <string name="rs_con_han">Còn hạn</string>
+    <string name="rs_het_han">Hết hạn</string>
+    <string name="rs_no_sametype">Không cùng loại</string>
+    <string name="rs_quality_good">Tốt</string>
+    <string name="rs_quality_mo_nhoe">Mờ nhòe</string>
+    <string name="rs_yes_sametype">Cùng loại</string>
+    <string name="show_central">nhìn thẳng</string>
+    <string name="socket_timeout_alert">Thời gian kết nối bị hết hạn. Vui lòng thử lại!</string>
+    <string name="str_">Mã Lỗi:</string>
+    <string name="str_anh_chan_dung">
+        <![CDATA[Xác thực khuôn mặt của chủ giấy tờ]]>
+        </string>
+    <string name="str_authen">Đang xác thực người dùng...</string>
+    <string name="str_bang_lai_xe">Bằng lái xe</string>
+    <string name="str_card_expired">Giấy tờ hết hạn!</string>
+    <string name="str_chon_giay_to">Chọn giấy tờ mà bạn muốn xác thực</string>
+    <string name="str_chon_phien_ban">Chọn phiên bản</string>
+    <string name="str_chuc_nang_dang_duoc_phat_trien">
+        <![CDATA[ Chức năng sắp ra mắt!]]>
+        </string>
+    <string name="str_chung_minh_thu">Chứng minh thư, \nThẻ căn cước</string>
+    <string name="str_cmt_quan_doi">Chứng minh thư quân đội</string>
+    <string name="str_error">"         <![CDATA[ Đã có lỗi xảy ra! Vui lòng:<br/>          - Kiểm tra lại kết nối mạng.          <br/>          ]]>         "</string>
+    <string name="str_errorCode">Không hợp lệ!</string>
+    <string name="str_error_login">"         <![CDATA[ Lỗi xác thực! Vui lòng:<br/>          - Kiểm tra lại kết nối mạng.          <br/>          - Phiên bản thử nghiệm bạn đang dùng đã hết hạn.          ]]>         "</string>
+    <string name="str_expert_token">Bản dùng thử của bạn đã hết hạn!</string>
+    <string name="str_giay_to_khac">Giấy tờ khác</string>
+    <string name="str_ho_chieu">
+        <![CDATA[Hộ chiếu]]>
+    </string>
+    <string name="str_hop_le">Hợp lệ</string>
+    <string name="str_id_passport">Số hộ chiếu:</string>
+    <string name="str_loading">Loading. Please wait...</string>
+    <string name="str_mat_sau">Mặt sau</string>
+    <string name="str_mat_sau_cmt">
+        <![CDATA[Chứng minh thư / Thẻ căn cước]]>
+    </string>
+    <string name="str_mat_sau_cmt_quandoi">
+        <![CDATA[Chứng minh thư quân đội]]>
+    </string>
+    <string name="str_mat_truoc">Mặt trước</string>
+    <string name="str_mat_truoc_cmt">
+       <![CDATA[Chứng minh thư / Thẻ căn cước]]>
+    </string>
+    <string name="str_mat_truoc_cmt_quandoi">
+        <![CDATA[Chứng minh thư quân đội]]>
+    </string>
+    <string name="str_no_internet">
+        Cần kết nối internet để khởi tạo dịch vụ!</string>
+    <string name="str_passport_validdate">Có giá trị đến:</string>
+    <string name="str_phien_ban_nang_cao">Phiên bản nâng cao</string>
+    <string name="str_phien_ban_nang_cao_1">Phiên bản nâng cao mức 1</string>
+    <string name="str_phien_ban_nang_cao_2">Phiên bản nâng cao mức 2</string>
+    <string name="str_phien_ban_tieu_chuan">Phiên bản tiêu chuẩn</string>
+    <string name="str_phien_ban_trai_nghiem">Chọn phiên bản bạn muốn trải nghiệm</string>
+    <string name="str_thongBao">Thông báo</string>
+    <string name="str_thong_tin_driver">
+        <![CDATA[Thông tin Bằng lái xe]]>
+    </string>
+    <string name="str_thong_tin_ho_chieu">
+        <![CDATA[Thông tin Hộ chiếu]]>
+    </string>
+    <string name="str_understand">Tôi đã hiểu</string>
+    <string name="str_update_info">
+        <![CDATA[Bạn muốn cập nhật thêm thông tin,<br />Xin vui lòng <font color=#246DB9><b>bấm vào đây </b></font> để cập nhật]]></string>
+    <string name="str_xac_thuc_1_goc_do">Xác thực một góc độ của khuôn mặt</string>
+    <string name="str_xac_thuc_2_goc_do">Xác thực hai góc độ của khuôn mặt</string>
+    <string name="str_xac_thuc_3_goc_do">Xác thực ba góc độ của khuôn mặt</string>
+    <string name="str_xac_thuc_giay_to">Xác thực giấy tờ</string>
+    <string name="str_xac_thuc_mat_truoc_sau">Xác thực mặt trước, mặt sau giấy tờ</string>
+    <string name="subtitle_personal_info">Quý khách vui lòng lựa chọn loại giấy tờ tùy thân để xác minh thông tin</string>
+    <string name="subtitle_register">Xin mời bạn chọn giấy tờ để đăng ký thông tin</string>
+    <string name="text_eye_close">Không</string>
+    <string name="text_eye_open">Có</string>
+    <string name="thuc_hien_lai_tu_dau">thuc_hien_lai_tu_dau</string>
+    <string name="title_is_eye_open">Mở mắt</string>
+    <string name="title_request_permission">Thông báo</string>
+    <string name="title_validation_count">Validation: %s</string>
+    <string name="try_again_add_face">Thử lại</string>
+    <string name="turn_left">quay mặt từ từ sang trái</string>
+    <string name="turn_right">quay mặt từ từ sang phải</string>
+    <string name="tv_add_face">Đăng ký \nkhuôn mặt:</string>
+    <string name="tv_expire_card">Hạn giấy tờ:</string>
+    <string name="tv_front_rear_card">Mặt trước, sau giấy tờ:</string>
+    <string name="tv_id_number">Cảnh báo trường thông tin:</string>
+    <string name="tv_masked">Mặt bị che:</string>
+    <string name="tv_mat_goc">Giấy tờ mất góc:</string>
+    <string name="tv_mo_nhoe">Giấy tờ mờ nhòe/mất góc:</string>
+    <string name="tv_quality_card">Chất lượng số ID:</string>
+    <string name="tv_quality_issue_date">Chất lượng ngày cấp:</string>
+    <string name="tv_type_card">Loại giấy tờ:</string>
+    <string name="tv_valid_card">Xác thực giấy tờ:</string>
+    <string name="tv_valid_face">Xác thực khuôn mặt:</string>
+    <string name="unknown_msg">Không có thông tin</string>
+    <string name="warning_title">Cảnh báo</string>
+    <string name="xac_thuc_khuon_mat">xac_thuc_khuon_mat</string>
+</resources>
